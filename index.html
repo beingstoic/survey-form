@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <main id="main">
+        <!-- Header element containing the title and a small description -->
+    <header>
+        <h1 id="title">freeCodeCamp Survey Form </h1>
+        <p id="description"><i>Thank you for taking the time to help us improve the platform </i></p>
+    </header>
+
+    <!-- Form containing all the input elements and the submit button -->
+    <Form id="survey-form">
+
+        <section class="form-element">
+            <label for="name" id="name-label">Name</label>
+            <input type="text" id="name" class="input-box" placeholder="Enter your name" required>
+        </section>
+
+        <section class="form-element">
+            <label for="email" id="email-label">Email</label>
+            <input type="email" required class="input-box" id="email" placeholder="Enter your Email">
+        </section>
+
+        <section class="form-element">
+            <label for="number" id="number-label">Age(optional)</label>
+            <input type="number" id="number" min="10" class="input-box"  max="99" placeholder="Age">
+        </section>
+
+        <section class="form-element">
+            <label for="dropdown">Which option best describes your current role? </label>
+            <select name="roles" class="select-box"  id="dropdown" aria-placeholder="Select current role">
+                <option value="student">Student</option>
+                <option value="job">Full time Job</option>
+                <option value="learner">Full time learner</option>
+                <option value="unsaid">Prefer not to say</option>
+                <option value="other"> Other</option>
+              </select>
+        </section>
+
+
+        <fieldset class="form-element">
+            <legend>Would you recommend freeCodeCamp to a friend?</legend>
+                <label for="definitly">
+                    <input type="radio" id="definitly" value="definitly" name="opinion">
+                Definitly</label>
+                
+                <label for="maybe">
+                    <input type="radio" id="maybe" value="maybe" name="opinion">
+                Maybe</label>
+                
+
+                <label for="unsure">
+                    <input type="radio" id="unsure" value="unsure" name="opinion">Not sure
+                </label>
+        </fieldset>
+        
+        <section class="form-element">
+            <label for="feature">What is your favorite feature of freeCodeCamp?  </label>
+            <select name="feature" class="select-box" id="feature" aria-placeholder="Select an option">
+                <option value="challenges">Challenges</option>
+                <option value="projects">Projects</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="community">Community</option>
+                <option value="open-source"> Open Source</option>
+              </select>
+        </section>
+
+        <fieldset class="form-element">
+            <legend>What would you like to see improved? <span class="sub">(Check all that apply)</span> </legend>
+
+            <label for="fend">
+                <input type="checkbox"id="fend" value="fend">
+            Front-end Projects</label>
+
+            <label for="bend">
+                <input type="checkbox" id="bend" value="bend">
+            Back-end Projects</label>
+
+            <label for="visual">
+                <input type="checkbox" value="visual" id="visual">
+            Data Visualization</label>
+            
+
+            <label for="challenge">
+                <input type="checkbox" value="challenge" id="challenge">
+            Challenges</label>
+           
+
+            <label for="open-source">
+                <input type="checkbox" id="open-source" value="open-source">
+            Open souce</label>
+            
+
+            <label for="gitter">
+                <input type="checkbox" id="gitter" value="gitter">
+            Gitter help rooms</label>
+            
+            <label for="videos" class="videos">
+                <input type="checkbox" value="videos" id="videos">Videos
+            </label>
+            
+
+            <label for="city">
+                <input type="checkbox" value="city-meetups" id="city">
+            City Meetups</label>
+            
+
+            <label for="wiki">
+                <input type="checkbox" value="wiki" id="wiki">
+            Wiki</label>
+            
+
+            <label for="forum">
+                <input type="checkbox" value="forum" id="forum">
+            Forum</label>
+            
+
+            <label for="add-courses">
+                <input type="checkbox" value="forum" class="checkbox">    
+            Additional Courses</label>
+        </fieldset>
+
+        <section class="form-element">
+            <label for="comment">Any comment or suggestions</label>
+            <textarea name="comments" id="comment" cols="30" rows="10"></textarea>
+        </section>
+        
+        <button type="submit" id="submit">Submit</button>
+
+    </Form>
+
+    </main>
+    
+    <!-- Script -->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
